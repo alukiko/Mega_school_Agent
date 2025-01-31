@@ -10,6 +10,4 @@
 
 ## Source code
 * [server.py](server.py) contains API logic
-* [train.py](train.py) trains dummy model using Iris dataset
-* [query_example.py](query_example.py) helps to check that docker container working properly
 * [Dockerfile](Dockerfile) describes a Docker image that is used to run the API
