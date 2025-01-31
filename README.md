@@ -1,13 +1,32 @@
-# An example of how to deploy Machine learning model using [Fast API](https://fastapi.tiangolo.com/) and [Docker](https://www.docker.com/)
+# ITMO AI Agent
+
+## Описание проекта
+
+ITMO AI Agent – это интеллектуальный агент, предоставляющий актуальную информацию об Университете ИТМО. Проект использует LangGraph, ChatGPT-4o mini и Tuvio для обработки запросов, интеграции данных и генерации ответов. Бот совмещает сведения, полученные из языковой модели, с фактами и дополнительным контекстом, извлекаемым из внешних источников.
+
+## Основные функции
+
+* Поиск и предоставление информации о новостях, образовательных программах, условиях поступления и других аспектах ИТМО.
+
+* Комбинация генеративных моделей с фактологическими данными для обеспечения точности ответов.
+
+* Автоматизация запросов и взаимодействия с пользователями через API.
+
+* Обработка естественного языка для понимания и адаптации к разным формулировкам запросов.
+
+## Используемые технологии
+
+* LangGraph – управление потоком выполнения и маршрутизация данных.
+
+* ChatGPT-4o mini – генерация и обработка текстовых запросов.
+
+* Tuvio – интеграция и обработка данных из внешних источников.
+
+* FastAPI – разработка API сервиса.
+
+* Docker – контейнеризация и развертывание.
 
 ## How to run
 * Install and run Docker
-* Build Docker image using `docker build . -t iris_server`
-* Run Docker container using `docker run --rm -it -p 80:80 iris_server`
+* Build Docker image using `docker compose up --build`
 * Go to `http://127.0.0.1:80/docs` to see all available methods of the API
-
-**All parameters are hardcoded to make the example as easy as possible** 
-
-## Source code
-* [server.py](server.py) contains API logic
-* [Dockerfile](Dockerfile) describes a Docker image that is used to run the API
