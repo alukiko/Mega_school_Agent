@@ -1,8 +1,9 @@
-langchain_openai
-langgraph
-langchain_community
-requests
-pydantic
-joblib
-fastapi==0.63.0
-uvicorn
+python-dotenv
+langchain_openai==0.3.3
+langgraph==0.2.69
+langchain_community==0.3.16
+requests==2.32.3
+pydantic==2.10.6
+joblib==1.4.2
+fastapi==0.115.8
+uvicorn==0.34.0
